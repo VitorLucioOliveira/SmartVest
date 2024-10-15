@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url(reset.css);
+
+:root{
+    --font-family1: "Prompt", sans-serif;
+    --font-family2: "Afacad Flux", sans-serif;
+    --background-color:#fff ;
+    --branco: #f0f0f0;
+    --preto: #000;
+}
+
+body{
+    background-color: var(--background-color);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+}
+
+header img{
+  width: 50%;
+}
+
+main{
+  display: flex;  
+  justify-content: space-evenly;
+  margin: 50px 0;
+  flex-wrap: wrap; /* Isso permitirá que os containers "quebrem" a linha */
+  gap: 20px; /* Opcional: Define o espaçamento entre as linhas e colunas */
+}
+
+.container{
+  background-color: var(--branco  );
+  border-radius: 28px;
+  min-width: 300px;
+}
+
+.topico{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 10px 10px 5px 10px;
+  gap: 10px;
+  border-bottom: 2px solid var(--background-color);
+}
+
+.topico_img{
+  width: 30px;
+  height: 30px;
+ 
+}
+
+.topico_titulo{
+  font-family: var(--font-family2);
+  font-weight: 500;
+  font-size: 24px;
+
+}
+.subscriber_list{
+ padding: 0px 20px 0 20px;
+ 
+}
+
+.subscriber{
+  padding: 15px ;
+  font-size: 16px;
+  font-family: var(--font-family1);
+  border-bottom: 2px solid var(--background-color);
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
