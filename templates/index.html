@@ -24,17 +24,31 @@
             <ul class="subscriber_list">
                 {% for subscriber in topico.subscribers %}
                     <li class="subscriber">
-                        <img class="subscriber_img" src="{{ url_for('static', filename='img/account.png') }}"
-                             alt="conta">
-                        <p>{{ subscriber }}</p>
+                        <div class="subscriber_id" onclick="toggleInfo(this)">
+                            <img class="subscriber_img" src="{{ url_for('static', filename='img/account.png') }}"
+                                 alt="conta">
+                            <p>{{ subscriber.nome }}</p>
+                        </div>
+                        <div class="subscriber_info">
+                            <p>Temperatura: {{ subscriber.temperatura }}</p>
+                            <p>Local: {{ subscriber.local }}</p>
+                            <p>Ar: {{ subscriber.ar }}</p>
+
+                        </div>
                     </li>
                 {% endfor %}
             </ul>
-
         </div>
     {% endfor %}
-
 </main>
+
+<script>
+    function toggleInfo(element) {
+        const infoDiv = element.nextElementSibling; // Seleciona a div .subscriber_info próxima
+        infoDiv.classList.toggle('active');
+    }
+</script>
+
 
 </body>
 
