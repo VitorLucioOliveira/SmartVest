@@ -2,7 +2,7 @@
     {
         "nome": "Topico 1",
         "subscribers": [
-            { "nome": "A1B2C", "temperatura": 36.5, "local": "São Paulo", "ar": "Estavel" },
+            { "nome": "A262C9", "temperatura": 348.5, "local": "São Paulo", "ar": "Estavel" },
             { "nome": "D3E4F", "temperatura": 37.0, "local": "Rio de Janeiro", "ar": "Estavel"  },
             { "nome": "G5H6I", "temperatura": 36.7, "local": "Belo Horizonte", "ar": "Estavel"  }
         ]
@@ -21,14 +21,6 @@
             { "nome": "S3T4U", "temperatura": 36.6, "local": "Brasília", "ar": "Estavel"  },
             { "nome": "V5W6X", "temperatura": 37.1, "local": "Fortaleza", "ar": "Estavel"  },
             { "nome": "Y7Z8A", "temperatura": 36.8, "local": "Recife", "ar": "Estavel"  }
-        ]
-    },
-    {
-        "nome": "Topico 4",
-        "subscribers": [
-            { "nome": "B9C0D", "temperatura": 36.3, "local": "Manaus", "ar": "Estavel"  },
-            { "nome": "E1F2G", "temperatura": 37.3, "local": "Belém", "ar": "Estavel"  },
-            { "nome": "H3I4J", "temperatura": 37.0, "local": "Florianópolis", "ar": "Estavel"  }
         ]
     }
 ]
