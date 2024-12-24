@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.0/socket.io.min.js"></script>
+    <title>Smart Vest</title>
+</head>
+
+<body>
+<header>
+    <img src="{{ url_for('static', filename='img/logo.png') }}" alt="Logo">
+</header>
+
+<main id="topicos"> <!-- Adicionado id="topicos" aqui -->
+    {% for topico in topicos %}
+        <div class="container">
+            <div class="topico">
+                <img class="topico_img" src="{{ url_for('static', filename='img/Radio.png') }}" alt="Icone">
+                <h1 class="topico_titulo">{{ topico.nome }}</h1>
+            </div>
+
+            <ul class="subscriber_list">
+                {% for subscriber in topico.subscribers %}
+                    <li class="subscriber">
+                        <div class="subscriber_id" onclick="toggleInfo(this)">
+                            <img class="subscriber_img" src="{{ url_for('static', filename='img/account.png') }}"
+                                 alt="conta">
+                            <p>{{ subscriber.id }}</p>
+                        </div>
+                        <div class="subscriber_info">
+                            <p>Alerta: {{ subscriber.alerta }}</p>
+
+                        </div>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    {% endfor %}
+</main>
+
+<script src="{{ url_for('static', filename='scripts.js') }}"></script>
+</body>
+</html>

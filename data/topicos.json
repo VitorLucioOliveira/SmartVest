@@ -1,0 +1,9 @@
+[
+    {
+        "nome": "Topico",
+        "subscribers": [
+          { "id": "A262C9", "alerta": 255 }
+        ]
+    }
+
+]
